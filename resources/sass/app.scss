@@ -1,0 +1,98 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.comment_by {
+    text-align: left;
+    color:#dc5e5e
+}
+
+.comment_date {
+    text-align: right;
+}
+
+.comment_info {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.like_button{
+    border-radius: 5px;
+}
+
+.comment_by {
+    text-align: left;
+    color: #dc5e5e;
+}
+  
+.comment_date {
+    text-align: right;
+}
+  
+.comment_info {
+    font-size: 12px;
+    font-style: italic;
+}
+  
+.like_button {
+    border-radius: 5px;
+}
+  
+.comment_container {
+    box-shadow: 0px 0px 3px #888888;
+    margin-bottom: 20px;
+    padding: 15px 15px 10px 15px;
+    border-radius: 5px 5px 5px 0px;
+}
+  
+.comment_main {
+    margin-bottom: 5px;
+}
+  
+.comments_panel .comments {
+    width: 100%;
+    position: absolute;
+    height: calc(100vh - 300px);
+    overflow: scroll;
+    padding: 5px;
+}
+  
+.comments_panel {
+    height: calc(100vh - 200px);
+    position: relative;
+}
+  
+.comments_panel .create_comment {
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 10px;
+}
+
+.comment_container {
+    position:relative;
+}
+.comment_container_actions {
+    visibility: hidden;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.comment_container:hover {
+    .comment_container_actions {
+        visibility: visible;
+    }
+}
